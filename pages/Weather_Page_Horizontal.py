@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="5-Day Weather Forecast", layout="wide")
 
-st.title("5-Day Weather Forecast + Graphs")
+st.title("5-Day Weather Forecast")
 
 st.write("Enter a location (e.g., Atlanta, GA) to get the 5-day weather forecast with temperature and precipitation graphs.")
 
@@ -43,10 +43,10 @@ def extract_temperature_precip(forecast_periods):
     days = []
     temps = []
     pops = []
-    for period in forecast_periods[:10]:  # 5 days = 10 periods
+    for period in forecast_periods[:10]:
         days.append(period["name"])
         temps.append(period["temperature"])
-        pops.append(period.get("probabilityOfPrecipitation", {}).get("value", 0))  # May be None
+        pops.append(period.get("probabilityOfPrecipitation", {}).get("value", 0))ax
     return days, temps, pops
 
 if st.button("Get Forecast"):
