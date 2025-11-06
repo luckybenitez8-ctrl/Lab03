@@ -46,7 +46,7 @@ def extract_temperature_precip(forecast_periods):
     for period in forecast_periods[:10]:
         days.append(period["name"])
         temps.append(period["temperature"])
-        pops.append(period.get("probabilityOfPrecipitation", {}).get("value", 0))ax
+        pops.append(period.get("probabilityOfPrecipitation", {}).get("value", 0))ax)
     return days, temps, pops
 
 if st.button("Get Forecast"):
