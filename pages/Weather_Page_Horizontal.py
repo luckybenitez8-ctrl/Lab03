@@ -65,7 +65,7 @@ if st.button("Get Forecast"):
                 days, temps, pops = extract_temperature_precip(forecast_periods)
                 st.subheader("Temperature Forecast")
                 fig1, ax1 = plt.subplots()
-                ax1.plot(days, temps, marker='o', linestyle='-', color='orange')
+                ax1.plot(days, temps, marker='o', linestyle='-', color='Blue')
                 ax1.set_ylabel("Temperature (°F)")
                 ax1.set_xticklabels(days, rotation=45, ha='right')
                 st.pyplot(fig1)
