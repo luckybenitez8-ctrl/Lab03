@@ -37,9 +37,7 @@ if prompt:
     st.session_state.chat_history.append({"role": "user", "content": prompt, "avatar": "👤"})
 
     # Fixed response
-    response = "Hi, I'm SKY — your helpful AI assistant for planning around the weather! ☀️⛅🌧️
-
-Let me know what you need and I’ll help you get set up."
+    response = "Hi, I'm SKY — your helpful AI assistant for planning around the weather!"
 
     # Display fixed assistant reply
     with st.chat_message("assistant", avatar="🤖"):
