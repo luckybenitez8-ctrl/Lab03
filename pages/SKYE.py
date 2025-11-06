@@ -27,6 +27,6 @@ with col1:
 
     st.button("Ask Chatbot")
 with col2:
-    st.subheader("💬 Chatbot Responses")o
+    st.subheader("💬 Chatbot Responses")
     st.info("The chatbot will analyze your inputs and weather data to give recommendations here.")
 
