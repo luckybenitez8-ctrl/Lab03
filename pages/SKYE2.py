@@ -4,10 +4,10 @@ from datetime import date
 
 st.set_page_config(page_title="Event Planner AI Chatbot", layout="wide")
 
-st.title("🎯 Smart Event Planner Chatbot")
+st.title("Smart Event Planner Chatbot")
 
 st.markdown("""
-Welcome to your interactive event planning assistant powered by AI!
+Hi I'm SKYE, your interactive event planning assistant powered by AI!
 
 Ask anything like:
 - *"Can I plan an outdoor birthday party this Saturday in San Diego?"*
